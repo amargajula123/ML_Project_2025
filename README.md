@@ -15,51 +15,58 @@ this is my ML project regarding to the All hypothetical Algorithems
 
 
 creating conda envirment
-...
+```
 
 conda create -p venv python==3.7 -y
 
 conda activate venv/
-...
+```
 OR
-...
+```
 conda activate venv
-...
+```
 pip install flask
-...
+```
 
 pip install -r requirements.txt
 
-...
+```
 
 To add file to the git
-...
-git add.
-...
+```
+git add .
+```
 OR
-...
+```
 git add <file_name>
 
-...
+```
 To ignore file or folder from git we can write name of file/folder inside .ignore file
 
 
 To check the git status
 
-...
+```
 
 git status
-...
+```
 
 To check al the version maintained by git
 
-...
+```
 git log
-...
+```
 To create version/commit all changes by git
-...
+```
 git commit -m "massage"
-...
+```
 
+To send changes to git
 
+```
+git push origin main
 
+```
+To check remote url
+```
+git remote -v
