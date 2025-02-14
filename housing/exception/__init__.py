@@ -17,8 +17,8 @@ class HosingException(Exception):
         file_number=exec_tb.tb_frame.f_lineno
         file_name = exec_tb.tb_frame.f_code.co_filename
 
-        error_massage = f"Error occured in scrip: [{file_name}] at line number : [{file_number}]\
-        error message:[{error_massage}]"
+        error_massage = f"Error occured in script : [{file_name}] at line number : [{file_number}]
+              error message:[{error_massage}]"
 
         return error_massage
     
