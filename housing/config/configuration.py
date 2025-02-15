@@ -74,15 +74,32 @@ class Configuration:
         
 
     def get_data_validation_config(self)->DataValidationConfig:
-        pass
+        try:
+            schema_file_path=None
+            data_validation_config = DataValidationConfig(schema_file_path=schema_file_path)
+            return data_validation_config
+        except Exception as e:
+            raise HosingException(e,sys) from e
     def get_data_transformation_config(self)->DataTransformationConfig:
-        pass
+        try:
+            pass
+        except Exception as e:
+            raise HosingException(e,sys) from e
     def get_module_trainer_config(self)->ModelTrainerConfig:
-        pass
+        try:
+            pass
+        except Exception as e:
+            raise HosingException(e,sys) from e
     def get_model_evaluation_config(self)->ModelEvaluationConfig:
-        pass
+        try:
+            pass
+        except Exception as e:
+            raise HosingException(e,sys) from e
     def get_model_pusher_config(self)->ModelPusherConfig:
-        pass
+        try:
+            pass
+        except Exception as e:
+            raise HosingException(e,sys) from e
     def get_training_pipeline_config(self)->TrainingPipelineConfig:
         try:
             training_pipeline_config=self.config_info[TRAINING_PIPELINE_CONFIG_KEY]
