@@ -4,11 +4,12 @@ from housing.exception import HosingException
 from housing.entity.artifact_entity import DataIngestionArtifact
 from housing.entity.config_entity import DataIngestionConfig
 from housing.component.data_ingestion import DataIngestion
+import os,sys
 
 
 
 
-class Pipeline(self);
+class Pipeline:
     def __init__(self,config: Configuration=Configuration()) -> None:
         try:
             self.config = config
@@ -39,7 +40,7 @@ class Pipeline(self);
 
     def start_model_evaluation(self):
         pass
-    
+
     def start_model_pusher(self):
         pass
         

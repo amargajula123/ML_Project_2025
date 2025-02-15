@@ -62,7 +62,7 @@ class DataIngestion:
             # opening file and extracting file into raw_data file
             logging.info(f"Extracting tgz file : [{tgz_file_path}] into : [{raw_data_dir}]")
             with tarfile.open(tgz_file_path) as housing_tgz_file_obj:
-                housing_tgz_file_obj.extract(path=raw_data_dir)
+                housing_tgz_file_obj.extractall(path=raw_data_dir)
             logging.info(f"Exctracting completed intf : {raw_data_dir}")
 
         except Exception as e:
@@ -120,7 +120,7 @@ class DataIngestion:
             
             data_ingestion_artifact = DataIngestionArtifact(train_file_path=train_file_path,
                                   test_file_path=test_file_path,
-                                  is_ingested=true,
+                                  is_ingested=True,
                                   message=f"Data Ingestion Completed Successfully"
                                   )
             
@@ -129,10 +129,10 @@ class DataIngestion:
         except Exception as e:
             raise HosingException(e,sys) from e
 
-    def initiate_data_ingestion(self)
+    def initiate_data_ingestion(self):
         try:
             tgz_file_path = self.download_housing_data()
-            tgz_file_path = self.extract_tgz_file(tgz_file_path=tgz_file_path)
+            self.extract_tgz_file(tgz_file_path=tgz_file_path)
             return self.split_data_as_train_test()
 
         except Exception as e:
