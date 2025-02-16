@@ -4,6 +4,7 @@ gunicorn
 #sklearn
 pandas
 -e .
+evidently
 PyYAML
 
 

@@ -111,7 +111,17 @@ pip install ipykernel
 
 
 Data Drift:
-When your datset stats gets change we call it as data drift
+When your "Datset" statistics gets change we call it as data drift
+
+what we do in Data_draft ?
+
+Ans:-
+we try to check the statistics of one dataset with the another dataset if the
+statistics of both dataset "are SAME" there is 0 "Data_drift".
+if the statistics of both dataset "are NOT SAME" there will be "Data_drift".
+bassically we  compare statistics of both datasets
+
+
 
 
 
