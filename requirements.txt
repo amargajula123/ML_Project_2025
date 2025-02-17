@@ -5,6 +5,7 @@ gunicorn
 pandas
 -e .
 evidently
+dill
 PyYAML
 
 
