@@ -6,24 +6,41 @@ from housing.component.data_transformation import DataTransformation
 
 def main():
     try:
+        # +++++++++get_model_trainer_config() Check++++++++++
+        model_traine_config = Configuration().get_model_trainer_config()
+        print(model_traine_config)
+        # +++++++++get_model_trainer_config() Done++++++++++
+
+        # +++++++++get_data_transformation_config() Check++++++++++
         #data_transformation_config = Configuration().get_data_transformation_config()
         #print(data_transformation_config)
+        # +++++++++get_data_transformation_config() Done++++++++++
+
+        # +++++++++get_data_validation_config() Check++++++++++
         #data_validation_config = Configuration().get_data_validation_config()
         #print(data_validation_config)
-        #pipeline = Pipeline()
-        #pipeline.run_pipeline()
-        #schema_file_path=r"C:\Users\gajula Amar\python_ALL_projects\ML_Project_2025\config\schema.yaml"
-        #file_path=r"C:\Users\gajula Amar\python_ALL_projects\ML_Project_2025\housing\artifact\data_ingestion\2025-02-16-13-26-27\ingested_data\train\housing.csv"
+        # +++++++++get_data_validation_config() Done++++++++++
 
+        # +++++++++get_data_ingestion_config() Check++++++++++
+        #data_ingestion_config = Configuration().get_data_ingestion_config()
+        #print(data_ingestion_config)
+        # +++++++++get_data_ingestion_config() Done++++++++++
+
+
+
+        
         # df = DataTransformation.load_data(file_path=file_path,schema_file_path=schema_file_path
         #)
         #print(df.columns)
         #print(df.dtypes)
+        
 
-        # +++++++++data_transformation++++++++++
+        # +++++++++ CHECK ANY COMPONENT ++++++++++
 
-        pipeline = Pipeline()
-        pipeline.run_pipeline()
+        #pipeline = Pipeline()
+        #pipeline.run_pipeline()
+
+        # +++++++++CHECK ANY COMPONENT DONE++++++++++
 
 
 
